@@ -9,6 +9,9 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
@@ -30,11 +33,19 @@ body {
 }
 
 button {
+  height: fit-content;
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+}
+
+.notifile, .logo-link{
+  display: flex;
+  align-items: center;
+  /*margin: auto 0 auto auto; (self edit: this can achieve the same result as justify-content: space-between;*/
+  gap: 16px;
 }
 
 a {
@@ -44,5 +55,8 @@ a {
 }
 
 ul {
+  display: flex;
+  gap: 16px;
+  padding: 0 12px;
   list-style-type: none;
 }
